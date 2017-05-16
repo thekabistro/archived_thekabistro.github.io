@@ -20,23 +20,47 @@
     <style> @media (min-width: 1200px) {
       .container {
         width: 970px;
-        margin-top: 40px;
       }
+
+      .vertical-center {
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 90vh; /* These two lines are counted as one :-)       */
+
+        display: flex;
+        align-items: center;
+      }
+
 
     }
 
       body {
       /*  background-color: #34495e;
         color: #bdc3c7;*/
-        text-align: center;
+
       }
 
       .btn-nav {
         width: 100px;
       }
-      .navbarnew {
-        margin-right: 0px;
+
+      h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
+
+      .content {
+        margin-bottom: 0;
+        text-align: center;
+      }
+      .name {
+        text-align: right;
+
+      }
+
+      .name h2 {
+        padding-right: 10px;
+      }
+
 
 
     </style>
@@ -46,38 +70,23 @@
 
     <div class="container">
 
-      <div class="row">
-        <div class="col-md-4">
-      <h2 style="margin-top: 0px;">Kabir Kuriyan</h2>
-      <h5>Rutgers University</h5>
-    </div>
+      <div class="row vertical-center">
+        <div class="col-md-4 name">
+          <h2 style="border-right-style: solid;">Kabir Kuriyan </h2>
+        </div>
 
-        <div class="col-md-8 navbarnew" >
-          <button type="button" class="btn btn-nav">Top</button>
+        <div class="col-md-8" style="border-left-style: solid" >
+
           <button type="button" class="btn btn-nav">About</button>
           <button type="button" class="btn btn-nav">Projects</button>
           <button type="button" class="btn btn-nav">Contact</button>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-4">
-            <h3>About</h3>
-            <p> Just your average CS student. </p>
-        </div>
-        <div class="col-md-4">
-          <p><a href=""> Link Three</a></p>
-          <p> A slightly longer, crafty, creative and cool description. </p>
-        </div>
-        <div class="col-md-4">
-          <p><a href=""> Link Three</a></p>
-          <p> A slightly longer, crafty, creative and cool description. </p>
+          <p class="content"><br>
+            This is where the content will go.
+          </p>
         </div>
       </div>
 
-      <div class="row">
-        <hr>
-      </div>
+
 
     </div> <!-- Container -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
