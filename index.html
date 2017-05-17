@@ -22,12 +22,12 @@
   window.onload = function() {
     document.getElementById("buttonContact").onclick = function fun() {
       $( "#about" ).slideUp( "slow" );
-      $( "#contact" ).slideDown( "slow" );
+      $( "#contact" ).slideToggle( "slow" );
 
     }
     document.getElementById("buttonAbout").onclick = function fun() {
       $( "#contact" ).slideUp( "slow" );
-      $( "#about" ).slideDown( "slow" );
+      $( "#about" ).slideToggle( "slow" );
     }
 
   }
