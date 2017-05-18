@@ -24,7 +24,7 @@
       $( "#right" ).slideToggle( "slow" );
 
     }
-    
+
     document.getElementById("buttonContact").onclick = function fun() {
       $( "#about" ).slideUp( "slow" );
       $( "#contact" ).slideToggle( "slow" );
@@ -50,13 +50,17 @@
   .name {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
-   
+
     font-weight: bold;
   }
-    
+
   .name h2 {
     font-size: 40px;
     font-weight: bold;
+  }
+
+  .name:hover {
+    color: #ff7f7f;
   }
 
 
@@ -66,10 +70,21 @@
     font-size: 18px;
   }
 
+  .btn:focus {
+     outline: none;
+     background-color: #F2F2F2;
+  }
+
   .btn:hover {
     background-color: #404040;
     color: #FFF;
     border-color: #000;
+
+  }
+
+  .btn:active {
+
+
 
   }
 
