@@ -57,16 +57,23 @@
     margin-top: 0px;
     margin-bottom: 0px;
   }
-
-
+  
   .name {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+    transition: all 1s ease 0s;
+	margin-bottom: 40px;
+  }
+
+
+  .imageblock {
     text-align: center;
 	font-family: 'Open Sans', sans-serif;
     transition: all 1s ease 0s;
   }
 
   .name h2 {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: normal;
   }
 
@@ -74,7 +81,7 @@
     color: #666666;
   }
 
-  .name img {
+  .imageblock img {
 	margin: auto;
   }
 
@@ -110,7 +117,10 @@
     font-size: 14px;
   }
 
-
+.row-fix {
+     display: flex;
+     flex-direction: row;
+ }
 
 
   @media (min-width: 1200px) {
@@ -128,6 +138,13 @@
       align-items: center;
       transition: height .25s ease;
     }
+	
+	.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+	
 
    
 
@@ -167,28 +184,31 @@
 
 </head>
 <body>
-
+<div class="vertical-center">
   <div class="container">
   
-  <div class="vertical-center">
+  
   
   <div class="row">
   
-	 <div class="col-md-12 name">
+	 <div class="col-md-2"></div>
+	 <div class="col-md-8 name">
 	
 		 <h2>Kabir Kuriyan</h2>
 		 
 	</div>
-	</div>
+	<div class="col-md-2"></div>
+</div>
 
-    <div class="row ">
+
+
+
+	
+    <div class="row">
 	
 		
-	
-      <div id="buttonName" class="col-md-4 name">
-	  
-       
-		
+	<div class="col-md-2"></div>
+      <div id="buttonName" class="col-md-3 imageblock">	
 		<img class="img-responsive img-circle" width="150" height="150"src="./favicon.ico">
       </div>
 
@@ -220,7 +240,7 @@
 
       
 		  
-		  <table class="table table-hover ">
+	<table class="table table-hover table-condensed">
     
       <tr>
         <td class="tabletextright">Email: </td>
@@ -250,9 +270,9 @@
 
 
   </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
     </div>
-	</div> <!-- vertical-center -->
+	</div>
 </div> <!-- Container -->
 </body>
 
