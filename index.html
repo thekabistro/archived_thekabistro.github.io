@@ -27,26 +27,27 @@
 window.onload = function() {
   setTimeout(showRight, 700);
 
-  document.getElementById("buttonName").onclick = function fun() {
+/*   document.getElementById("buttonName").onclick = function fun() {
     $( "#right" ).slideToggle( "slow" );
   }
-
+*/
   document.getElementById("buttonContact").onclick = function fun() {
-    $( "#about" ).slideUp( "slow" );
+    
     $( "#contact" ).slideToggle( "slow" );
 
   }
-
+/*
   document.getElementById("buttonAbout").onclick = function fun() {
     $( "#contact" ).slideUp( "slow" );
     $( "#about" ).slideToggle( "slow" );
   }
-
+*/
 }
 
 
 function showRight() {
   $( "#right" ).slideToggle( "slow" );
+
 }
 
 </script>
@@ -148,13 +149,12 @@ body {
 
 
   .rightContainer {
-    border-left-style: solid;
-    border-left-width: thin;
+
   }
 
   .rightContainer p {
     padding: 10px
-    text-align: left;
+
   }
 
   .content {
@@ -169,11 +169,11 @@ body {
   }
 
   .contentright {
-    text-align: right;
+    text-align: center;
   }
 
   .tabletextright {
-    text-align: right;
+    text-align: center;
   }
 
 
@@ -198,12 +198,10 @@ body {
 
 
       <div class="row">
-        <div class="col-md-2"></div>
-          <div id="buttonName" class="col-md-3 imageblock">
-            <img class="img-responsive img-circle" width="150" height="150"src="./favicon.ico">
-          </div>
+        <div class="col-md-4"></div>
 
-        <div class="col-md-5 rightContainer vcenter" id="right" style="display:none;" role="group">
+
+        <div class="col-md-4 rightContainer vcenter" id="right" style="display:none;" role="group">
 
           <div class="btn-group btn-group-justified">
             <!--  <div class="btn-group" id="buttonAbout" role="group">
@@ -216,7 +214,7 @@ body {
               <button type="button" class="btn btn-default" role="group">Skills</button>
             </div> -->
             <div class="btn-group" role="group" id="buttonContact">
-              <button type="button" class="btn btn-default" role="group">Contact</button>
+              <button type="button" id="buttonContact" class="btn btn-default" role="group">Contact</button>
             </div>
           </div>
 
@@ -224,9 +222,9 @@ body {
             <p> A blurb about me coming soon! </p>
           </div>
 
-          <div class="content" id="contact" style="">
+          <div class="content" id="contact" >
 
-            <table class="table table-hover table-condensed">
+            <table class="table table-hover table">
 
             <tr>
               <td class="tabletextright">Email: </td>
@@ -236,10 +234,7 @@ body {
               <td class="tabletextright">Github:</td>
               <td>  <a href="https://github.com/thekabistro">github.com/thekabistro </a></td>
             </tr>
-            <tr>
-              <td class="tabletextright">Facebook: </td>
-              <td> <a href="https://www.facebook.com/kabir.kuriyan">facebook.com/kabir.kuriyan</a></td>
-            </tr>
+
             </table>
 
 
@@ -247,7 +242,7 @@ body {
           </div>
         </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-4">
       </div>
     </div> <!-- Container -->
   </div> <!-- vertical-center -->
