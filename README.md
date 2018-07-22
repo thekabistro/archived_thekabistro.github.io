@@ -1,3 +1,3 @@
 # thekabistro.github.io
 
-A work in progress.  Live at www.kabirkuriyan.com
+A constant work in progress.  Live at www.kabirkuriyan.com
