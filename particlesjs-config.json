@@ -1,10 +1,10 @@
 {
   "particles": {
     "number": {
-      "value": 125,
+      "value": 38,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 1025.8919341219544
       }
     },
     "color": {
@@ -13,11 +13,11 @@
     "shape": {
       "type": "edge",
       "stroke": {
-        "width": 0,
+        "width": 1,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 3
       },
       "image": {
         "src": "img/github.svg",
@@ -26,7 +26,7 @@
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.2324947488255008,
       "random": false,
       "anim": {
         "enable": false,
@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 12.02559045649142,
+      "value": 8.017060304327615,
       "random": true,
       "anim": {
         "enable": false,
@@ -50,19 +50,19 @@
       "distance": 150,
       "color": "#000000",
       "opacity": 0.4,
-      "width": 1.763753266952075
+      "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 1.603412060865523,
-      "direction": "bottom-right",
+      "speed": 1,
+      "direction": "bottom-left",
       "random": false,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
         "enable": false,
-        "rotateX": 600,
+        "rotateX": 721.5354273894853,
         "rotateY": 1200
       }
     }
@@ -72,7 +72,7 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
