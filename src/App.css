@@ -1,0 +1,38 @@
+body {
+ background-color: #1c1c1c;
+
+}
+
+.App .name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+}
+
+.App, .link {
+    color: #e0e0e0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 1s ease 0s;
+}
+
+.link {
+    color: #b7b7b7;
+}
+
+.link:hover {
+    color: #ffffff;
+    font-size: 110%;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
